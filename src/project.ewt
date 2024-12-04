@@ -2842,6 +2842,24 @@
         </settings>
     </configuration>
     <file>
+        <name>$PROJ_DIR$\bitwise_operations.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\DIO.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\DIO.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\main.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\relay.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\relay.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\tm4c123gh6pm.h</name>
     </file>
 </project>
