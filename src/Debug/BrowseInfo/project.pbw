@@ -96717,20 +96717,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int main(void)",
-    "location": {
-      "column": "5",
-      "line": "2",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:relay.h@25@macro@RELAY_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -96776,7 +96762,7 @@
     "ID": "c:@F@relay_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void relay_init(char, uint8_t)",
+    "display": "void relay_init(char, uint8_t, uint8_t)",
     "location": {
       "column": "6",
       "line": "9",
@@ -96787,24 +96773,108 @@
     "scope": null
   },
   {
-    "ID": "c:@F@relay_control",
+    "ID": "c:@F@relay_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void relay_control(char, uint8_t)",
+    "display": "void relay_init(char, uint8_t, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.h"
+    },
+    "name": "relay_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@relay_control_lamp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void relay_control_lamp(char, uint8_t)",
     "location": {
       "column": "6",
       "line": "10",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.h"
     },
-    "name": "relay_control",
+    "name": "relay_control_lamp",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@relay_control_lamp",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void relay_control_lamp(char, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "10",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.h"
+    },
+    "name": "relay_control_lamp",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "5",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@83@F@main@a",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "a",
+    "location": {
+      "column": "13",
+      "line": "6",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "a",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@322@F@main@pd2_state",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "pd2_state",
+    "location": {
+      "column": "17",
+      "line": "16",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "pd2_state",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@443@F@main@xor_result",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "xor_result",
+    "location": {
+      "column": "17",
+      "line": "19",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "xor_result",
+    "origin": "project_file",
     "scope": null
   },
   {
     "ID": "c:@F@relay_init",
     "What": "Function",
     "defdec": "Def",
-    "display": "void relay_init(char, uint8_t)",
+    "display": "void relay_init(char, uint8_t, uint8_t)",
     "location": {
       "column": "6",
       "line": "3",
@@ -96815,21 +96885,21 @@
     "scope": null
   },
   {
-    "ID": "c:@F@relay_control",
+    "ID": "c:@F@relay_control_lamp",
     "What": "Function",
     "defdec": "Def",
-    "display": "void relay_control(char, uint8_t)",
+    "display": "void relay_control_lamp(char, uint8_t)",
     "location": {
       "column": "6",
       "line": "7",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.c"
     },
-    "name": "relay_control",
+    "name": "relay_control_lamp",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:relay.c@154@F@relay_control@current_state",
+    "ID": "c:relay.c@183@F@relay_control_lamp@current_state",
     "What": "Variable",
     "defdec": "Def",
     "display": "current_state",
@@ -96839,6 +96909,20 @@
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.c"
     },
     "name": "current_state",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@relay_control_plug",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void relay_control_plug(char, uint8_t, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "17",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.c"
+    },
+    "name": "relay_control_plug",
     "origin": "project_file",
     "scope": null
   }

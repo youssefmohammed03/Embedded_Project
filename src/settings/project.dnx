@@ -16,37 +16,16 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>2373121375</Checksum>
+        <Checksum>4085673393</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
         <InstrCount>0</InstrCount>
     </Disassembly>
-    <DriverProfiling>
-        <Enabled>0</Enabled>
-        <Mode>1</Mode>
-        <Graph>0</Graph>
-        <Symbiont>0</Symbiont>
-    </DriverProfiling>
-    <CallStackLog>
-        <Enabled>0</Enabled>
-    </CallStackLog>
-    <CallStackStripe>
-        <ShowTiming>1</ShowTiming>
-    </CallStackStripe>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
         <StopOnThrow>_ 0</StopOnThrow>
     </Exceptions>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
-    <LogFile>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-        <Category>_ 0</Category>
-    </LogFile>
     <CallStack>
         <ShowArgs>0</ShowArgs>
     </CallStack>
@@ -69,7 +48,10 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Count>0</Count>
+        <Bp0>_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.25.9" 0 0 1 "" 0 ""</Bp0>
+        <Bp1>_ 0 "STD_CODE2" "{$PROJ_DIR$\main.c}.26.9" 0 0 1 "" 0 ""</Bp1>
+        <Bp2>_ 1 "STD_CODE2" "{$PROJ_DIR$\main.c}.22.17" 0 0 1 "" 0 ""</Bp2>
+        <Count>3</Count>
     </Breakpoints2>
     <Interrupts>
         <Enabled>1</Enabled>
@@ -81,6 +63,27 @@
         <TypeViol>0</TypeViol>
         <Stop>1</Stop>
     </MemConfig>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+    </DriverProfiling>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
