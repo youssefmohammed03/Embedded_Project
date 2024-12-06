@@ -7,6 +7,6 @@
 #define RELAY_OFF 0
 
 void relay_init(char port, uint8_t pins, uint8_t direction);
-void relay_control_lamp(char port, uint8_t pin);
+void relay_control_lamp(char port, uint8_t pin, uint8_t value);
 
 #endif

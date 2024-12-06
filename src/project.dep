@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>1113119852</fileChecksum>
+    <fileChecksum>179652100</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -10,9 +10,7 @@
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
             <file>$PROJ_DIR$\relay.c</file>
             <file>$PROJ_DIR$\DIO.c</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
             <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\config\generic_cortex.icf</file>
             <file>$PROJ_DIR$\relay.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
@@ -28,6 +26,8 @@
             <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
             <file>$PROJ_DIR$\bitwise_operations.h</file>
             <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GE6.icf</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\relay.c</name>
@@ -40,7 +40,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 1 10 9 6 2 18 12 21 8 22</file>
+                    <file> 1 8 7 5 2 16 10 19 6 20</file>
                 </tool>
             </inputs>
         </file>
@@ -49,13 +49,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 16</file>
+                    <file> 14</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 1 10 9 6 2 18 12 21 22</file>
+                    <file> 1 8 7 5 2 16 10 19 20</file>
                 </tool>
             </inputs>
         </file>
@@ -64,13 +64,13 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 17</file>
+                    <file> 15</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 7 15 5 20 13 16 11 0</file>
+                    <file> 22 13 21 18 11 14 9 0</file>
                 </tool>
             </inputs>
         </file>
@@ -79,13 +79,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 11</file>
+                    <file> 9</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 1 10 9 6 2 18 12 21 8 22</file>
+                    <file> 1 8 7 5 2 16 10 19 6 20</file>
                 </tool>
             </inputs>
         </file>
@@ -94,13 +94,16 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 14 17</file>
+                    <file> 12 15</file>
                 </tool>
             </outputs>
         </file>
         <forcedrebuild>
             <name>[MULTI_TOOL]</name>
             <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
         </forcedrebuild>
     </configuration>
     <configuration>
