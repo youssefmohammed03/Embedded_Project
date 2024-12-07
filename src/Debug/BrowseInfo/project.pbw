@@ -96821,7 +96821,7 @@
     "display": "void Delay(uint32_t)",
     "location": {
       "column": "6",
-      "line": "5",
+      "line": "4",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "Delay",
@@ -96829,16 +96829,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@129@F@Delay@i",
+    "ID": "c:main.c@108@F@Delay@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "27",
-      "line": "7",
+      "line": "6",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@getAppButton",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t getAppButton(uint8_t)",
+    "location": {
+      "column": "9",
+      "line": "10",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "getAppButton",
     "origin": "project_file",
     "scope": null
   },
@@ -96849,7 +96863,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "11",
+      "line": "20",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "main",
@@ -96857,40 +96871,40 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@207@F@main@a",
+    "ID": "c:main.c@363@F@main@appButton",
     "What": "Variable",
     "defdec": "Def",
-    "display": "a",
+    "display": "appButton",
     "location": {
       "column": "13",
-      "line": "12",
+      "line": "21",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
-    "name": "a",
+    "name": "appButton",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@412@F@main@pd2_state",
+    "ID": "c:main.c@391@F@main@physicalButton",
     "What": "Variable",
     "defdec": "Def",
-    "display": "pd2_state",
+    "display": "physicalButton",
     "location": {
-      "column": "17",
-      "line": "20",
+      "column": "13",
+      "line": "22",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
-    "name": "pd2_state",
+    "name": "physicalButton",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@533@F@main@xor_result",
+    "ID": "c:main.c@424@F@main@xor_result",
     "What": "Variable",
     "defdec": "Def",
     "display": "xor_result",
     "location": {
-      "column": "26",
+      "column": "13",
       "line": "23",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },

@@ -6,15 +6,13 @@
 
 "-p" 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\TexasInstruments\TM4C123GE6PM.ddf" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\TexasInstruments\TM4C123GH6PM.ddf" 
 
 "--semihosting" 
 
-"--device=TM4C123GE6PM" 
+"--device=TM4C123GH6PM" 
 
-"--drv_interface_speed=500" 
-
-"--drv_interface=SWD" 
+"--multicore_nr_of_cores=1" 
 
 
 
