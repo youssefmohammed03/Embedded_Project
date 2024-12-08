@@ -1,40 +1,22 @@
-#include "alarm.h"
+#include <stdio.h>
 #include <stdint.h>
-#include "inc/hw_memmap.h"
-#include "inc/hw_types.h"
-#include "driverlib/gpio.h"
-#include "driverlib/sysctl.h"
 
-#define ALARM_PORT GPIO_PORTF_BASE
-#define ALARM_PIN GPIO_PIN_2
-
-void AlarmInit(void)
-{
-     // Enable the GPIO peripheral for Port F
-    SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-
-    // Wait until the peripheral is ready
-    while (!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOF));
-
-    // Set the pin as output
-    GPIOPinTypeGPIOOutput(ALARM_PORT, ALARM_PIN);
-
-    // Ensure the alarm is initially off
-    DeactivateAlarm();
+// Function to initialize the alarm
+void AlarmInit(void) {
+    printf("Alarm Initialized\n");
 }
 
-void ActivateAlarm(void)
-{
-    GPIOPinWrite(ALARM_PORT, ALARM_PIN, ALARM_PIN);
+// Function to activate the alarm
+void ActivateAlarm(void) {
+    printf("Alarm Activated\n");
 }
 
-void DeactivateAlarm(void)
-{
-    GPIOPinWrite(ALARM_PORT, ALARM_PIN, 0);
+// Function to deactivate the alarm
+void DeactivateAlarm(void) {
+    printf("Alarm Deactivated\n");
 }
 
-void ToggleAlarm(void)
-{
-    uint8_t state = GPIOPinRead(ALARM_PORT, ALARM_PIN);
-    GPIOPinWrite(ALARM_PORT, ALARM_PIN, state ^ ALARM_PIN);
+// Function to toggle the alarm state
+void ToggleAlarm(void) {
+    printf("Alarm Toggled\n");
 }
