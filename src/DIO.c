@@ -27,8 +27,8 @@ void dio_init(char port, uint8_t pins, uint8_t direction) {
     }
 
     // Enable the clock for the port
-    SYSCTL_RCGCGPIO_R |= (1U << (port - 'A'));
-    while ((SYSCTL_PRGPIO_R & (1U << (port - 'A'))) == 0);
+    //SYSCTL_RCGCGPIO_R |= (1U << (port - 'A'));
+    //while ((SYSCTL_PRGPIO_R & (1U << (port - 'A'))) == 0);
 
     // Unlock mechanism for locked pins
     if (port == 'F' && (pins & Pin0)) {  // Check if PF0 is part of the pins

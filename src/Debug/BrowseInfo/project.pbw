@@ -96521,7 +96521,7 @@
     "scope": null
   },
   {
-    "ID": "c:DIO.c@1951@F@dio_readpin@port_base",
+    "ID": "c:DIO.c@1955@F@dio_readpin@port_base",
     "What": "Variable",
     "defdec": "Def",
     "display": "port_base",
@@ -96549,7 +96549,7 @@
     "scope": null
   },
   {
-    "ID": "c:DIO.c@2622@F@dio_readport@port_base",
+    "ID": "c:DIO.c@2626@F@dio_readport@port_base",
     "What": "Variable",
     "defdec": "Def",
     "display": "port_base",
@@ -96577,7 +96577,7 @@
     "scope": null
   },
   {
-    "ID": "c:DIO.c@3321@F@dio_writepin@port_base",
+    "ID": "c:DIO.c@3325@F@dio_writepin@port_base",
     "What": "Variable",
     "defdec": "Def",
     "display": "port_base",
@@ -96605,7 +96605,7 @@
     "scope": null
   },
   {
-    "ID": "c:DIO.c@4154@F@dio_writeport@port_base",
+    "ID": "c:DIO.c@4158@F@dio_writeport@port_base",
     "What": "Variable",
     "defdec": "Def",
     "display": "port_base",
@@ -96821,7 +96821,7 @@
     "display": "void Delay(uint32_t)",
     "location": {
       "column": "6",
-      "line": "4",
+      "line": "5",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "Delay",
@@ -96829,13 +96829,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@108@F@Delay@i",
+    "ID": "c:main.c@135@F@Delay@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "27",
-      "line": "6",
+      "line": "7",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "i",
@@ -96849,7 +96849,7 @@
     "display": "uint8_t getAppButton(uint8_t)",
     "location": {
       "column": "9",
-      "line": "10",
+      "line": "11",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "getAppButton",
@@ -96863,7 +96863,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "20",
+      "line": "24",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "main",
@@ -96871,44 +96871,100 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@363@F@main@appButton",
+    "ID": "c:main.c@465@F@main@appButtonForLamp",
     "What": "Variable",
     "defdec": "Def",
-    "display": "appButton",
+    "display": "appButtonForLamp",
     "location": {
       "column": "13",
-      "line": "21",
+      "line": "25",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
-    "name": "appButton",
+    "name": "appButtonForLamp",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@391@F@main@physicalButton",
+    "ID": "c:main.c@500@F@main@physicalButtonForLamp",
     "What": "Variable",
     "defdec": "Def",
-    "display": "physicalButton",
+    "display": "physicalButtonForLamp",
     "location": {
       "column": "13",
-      "line": "22",
+      "line": "26",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
-    "name": "physicalButton",
+    "name": "physicalButtonForLamp",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:main.c@424@F@main@xor_result",
+    "ID": "c:main.c@540@F@main@xor_result_For_Lamp",
     "What": "Variable",
     "defdec": "Def",
-    "display": "xor_result",
+    "display": "xor_result_For_Lamp",
     "location": {
       "column": "13",
-      "line": "23",
+      "line": "27",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
-    "name": "xor_result",
+    "name": "xor_result_For_Lamp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@584@F@main@appButtonForPlug",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "appButtonForPlug",
+    "location": {
+      "column": "13",
+      "line": "29",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "appButtonForPlug",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@619@F@main@physicalButtonForPlug",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "physicalButtonForPlug",
+    "location": {
+      "column": "13",
+      "line": "30",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "physicalButtonForPlug",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@659@F@main@xor_result_For_Plug",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "xor_result_For_Plug",
+    "location": {
+      "column": "13",
+      "line": "31",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "xor_result_For_Plug",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@703@F@main@DoorStatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "DoorStatus",
+    "location": {
+      "column": "13",
+      "line": "33",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "DoorStatus",
     "origin": "project_file",
     "scope": null
   },
