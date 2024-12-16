@@ -21,7 +21,6 @@ uint8_t getAppButton(uint8_t appButton){
 // B1 input to relay for the plug
 // B2 for Door
 int main(void) {
-    char receivedChar;
     uint8_t appButtonForLamp = 0;
     uint8_t physicalButtonForLamp = 0;
     uint8_t xor_result_For_Lamp = 0;
