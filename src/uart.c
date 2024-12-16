@@ -1,58 +1,34 @@
-/*#include "tm4c123gh6pm.h"
 #include "uart.h"
-#include <stdio.h>
+#include <stdint.h>
+#include "tm4c123gh6pm.h"
 
-volatile char received_char = 0;
-volatile char last_command = '\0';  // Holds the last received command
-char uart_buffer[10];  // Buffer for storing received commands
-uint8_t lamp_state = 0; // Variable to store lamp state
-uint8_t plug_state = 0; // Variable to store plug state
+// UART Initialization
+void UART_Init(void) {
+    // 1. Enable clocks for UART0 and GPIO Port A
+    SYSCTL_RCGCUART_R |= SYSCTL_RCGCUART_R0;  // Enable UART0 clock
+    SYSCTL_RCGCGPIO_R |= SYSCTL_RCGCGPIO_R0;  // Enable GPIO Port A clock
 
-void UART0_Init(void) {
-    SYSCTL_RCGCUART_R |= (1 << 0);
-    SYSCTL_RCGCGPIO_R |= (1 << 0);
+    // 2. Configure GPIO Pins PA0 and PA1 for UART
+    GPIO_PORTA_AFSEL_R |= 0x03;      // Enable alternate function for PA0 and PA1
+    GPIO_PORTA_PCTL_R |= 0x00000011; // Configure PA0 and PA1 for UART
+    GPIO_PORTA_DEN_R |= 0x03;        // Enable digital function for PA0 and PA1
 
-    GPIO_PORTA_AFSEL_R |= (1 << 0) | (1 << 1);
-    GPIO_PORTA_PCTL_R |= (1 << 0) | (1 << 4);
-    GPIO_PORTA_DEN_R |= (1 << 0) | (1 << 1);
-
-    UART0_CTL_R &= ~(1 << 0);
-    UART0_IBRD_R = 104;
-    UART0_FBRD_R = 11;
-    UART0_LCRH_R = (0x3 << 5);
-    UART0_CC_R = 0x0;
-    UART0_IM_R |= (1 << 4);
-    NVIC_EN0_R |= (1 << 5);
-    UART0_CTL_R |= (1 << 0) | (1 << 8) | (1 << 9);
+    // 3. Configure UART0
+    UART0_CTL_R &= ~UART_CTL_UARTEN; // Disable UART0 for configuration
+    UART0_IBRD_R = 104;              // Integer part of baud rate (16 MHz / (16 * 9600))
+    UART0_FBRD_R = 11;               // Fractional part of baud rate
+    UART0_LCRH_R = UART_LCRH_WLEN_8; // 8-bit data, no parity, 1 stop bit
+    UART0_CTL_R = UART_CTL_UARTEN | UART_CTL_TXE | UART_CTL_RXE; // Enable UART0
 }
 
-void UART0_TransmitChar(char c) {
-    while (UART0_FR_R & (1 << 5));
-    UART0_DR_R = c;
+// UART Send Character
+void UART_SendChar(char c) {
+    while (UART0_FR_R & UART_FR_TXFF); // Wait until TX buffer is not full
+    UART0_DR_R = c;                    // Write character to data register
 }
 
-void UART0_TransmitString(const char *str) {
-    while (*str) {
-        UART0_TransmitChar(*str++);
-    }
+// UART Read Character
+char UART_ReadChar(void) {
+    while (UART0_FR_R & UART_FR_RXFE); // Wait until RX buffer is not empty
+    return (char)(UART0_DR_R & 0xFF);  // Read received character
 }
-
-void UART0_Handler(void) {
-    if (UART0_MIS_R & (1 << 4)) {
-        received_char = (char)(UART0_DR_R & 0xFF);
-        UART0_ICR_R |= (1 << 4);
-    }
-}
-
-void displayLastCommand(void) {
-    UART0_TransmitString("Last Command: ");
-    if (last_command != '\0') {
-        UART0_TransmitChar(last_command);
-    } else {
-        UART0_TransmitString("No command received yet");
-    }
-    UART0_TransmitString("\r\n");
-}*/
-
-
-

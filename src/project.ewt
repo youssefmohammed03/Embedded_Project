@@ -2851,6 +2851,9 @@
         <name>$PROJ_DIR$\DIO.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\led.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>

@@ -1,16 +1,8 @@
 #ifndef UART_H
 #define UART_H
 
-#include <stdint.h>
+void UART_Init(void);
+char UART_ReadChar(void);
+void UART_SendChar(char c);
 
-void UART0_Init(void);
-void UART0_TransmitChar(char c);
-void processCommand(char c);
-void displayLastCommand(void);
-void UART0_SendString(char *str);
-void processCommand(char c);
-
-
-extern volatile char received_char;
-
-#endif
+#endif // UART_H

@@ -96717,734 +96717,6 @@
     "scope": null
   },
   {
-    "ID": "c:stdio.h@99@macro@_STDIO",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STDIO",
-    "location": {
-      "column": "9",
-      "line": "4",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "_STDIO",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@375@macro@NULL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "NULL",
-    "location": {
-      "column": "11",
-      "line": "19",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "NULL",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@3283@macro@EOF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EOF",
-    "location": {
-      "column": "9",
-      "line": "103",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "EOF",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@3315@macro@SEEK_SET",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SEEK_SET",
-    "location": {
-      "column": "9",
-      "line": "105",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "SEEK_SET",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@3342@macro@SEEK_CUR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SEEK_CUR",
-    "location": {
-      "column": "9",
-      "line": "106",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "SEEK_CUR",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@3369@macro@SEEK_END",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SEEK_END",
-    "location": {
-      "column": "9",
-      "line": "107",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "SEEK_END",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@T@fpos_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Fpost",
-    "location": {
-      "column": "16",
-      "line": "110",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "fpos_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@3737@macro@__PRINTFPR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__PRINTFPR",
-    "location": {
-      "column": "11",
-      "line": "126",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__PRINTFPR",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@3934@macro@__SCANFPR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__SCANFPR",
-    "location": {
-      "column": "11",
-      "line": "129",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__SCANFPR",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@4131@macro@__SCANFSPR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__SCANFSPR",
-    "location": {
-      "column": "11",
-      "line": "132",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__SCANFSPR",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@4448@macro@__DEPREC_PRINTF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DEPREC_PRINTF",
-    "location": {
-      "column": "9",
-      "line": "141",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__DEPREC_PRINTF",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stdio.h@4493@macro@__DEPREC_SCANF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DEPREC_SCANF",
-    "location": {
-      "column": "9",
-      "line": "142",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__DEPREC_SCANF",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__gets",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * __gets(char *, int)",
-    "location": {
-      "column": "37",
-      "line": "197",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__gets",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@gets",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char * gets(char *)",
-    "location": {
-      "column": "37",
-      "line": "198",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "gets",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@perror",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void perror(const char *)",
-    "location": {
-      "column": "39",
-      "line": "200",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "perror",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@printf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int printf(const char *restrict, ...)",
-    "location": {
-      "column": "39",
-      "line": "201",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "printf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@puts",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int puts(const char *)",
-    "location": {
-      "column": "39",
-      "line": "202",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "puts",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@scanf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int scanf(const char *restrict, ...)",
-    "location": {
-      "column": "39",
-      "line": "203",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "scanf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@sprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int sprintf(char *restrict, const char *restrict, ...)",
-    "location": {
-      "column": "39",
-      "line": "204",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "sprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@sscanf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int sscanf(const char *restrict, const char *restrict, ...)",
-    "location": {
-      "column": "39",
-      "line": "206",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "sscanf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__ungetchar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int __ungetchar(int)",
-    "location": {
-      "column": "39",
-      "line": "209",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__ungetchar",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vprintf(const char *restrict, __Va_list)",
-    "location": {
-      "column": "39",
-      "line": "210",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vscanf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vscanf(const char *restrict, __Va_list)",
-    "location": {
-      "column": "37",
-      "line": "213",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vscanf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vsscanf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vsscanf(const char *restrict, const char *restrict, __Va_list)",
-    "location": {
-      "column": "37",
-      "line": "214",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vsscanf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vsprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vsprintf(char *restrict, const char *restrict, __Va_list)",
-    "location": {
-      "column": "37",
-      "line": "217",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vsprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__write_array",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "size_t __write_array(const void *, size_t, size_t)",
-    "location": {
-      "column": "35",
-      "line": "220",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "__write_array",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@snprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int snprintf(char *restrict, size_t, const char *restrict, ...)",
-    "location": {
-      "column": "38",
-      "line": "222",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "snprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@vsnprintf",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int vsnprintf(char *restrict, size_t, const char *restrict, __Va_list)",
-    "location": {
-      "column": "38",
-      "line": "224",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "vsnprintf",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@getchar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int getchar(void)",
-    "location": {
-      "column": "35",
-      "line": "229",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "getchar",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@putchar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int putchar(int)",
-    "location": {
-      "column": "35",
-      "line": "230",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "putchar",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@remove",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int remove(const char *)",
-    "location": {
-      "column": "35",
-      "line": "233",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "remove",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@rename",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int rename(const char *, const char *)",
-    "location": {
-      "column": "35",
-      "line": "234",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\stdio.h"
-    },
-    "name": "rename",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART0_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART0_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "112",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "UART0_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART0_SendString",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART0_SendString(char *)",
-    "location": {
-      "column": "6",
-      "line": "113",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "UART0_SendString",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART0_ReadChar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char UART0_ReadChar(void)",
-    "location": {
-      "column": "6",
-      "line": "114",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "UART0_ReadChar",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@uart_buffer",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "uart_buffer",
-    "location": {
-      "column": "6",
-      "line": "117",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "uart_buffer",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@lamp_state",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "lamp_state",
-    "location": {
-      "column": "9",
-      "line": "118",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "lamp_state",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@plug_state",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "plug_state",
-    "location": {
-      "column": "9",
-      "line": "119",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "plug_state",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@index",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "index",
-    "location": {
-      "column": "9",
-      "line": "121",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "index",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART0_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void UART0_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "123",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "UART0_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART0_SendString",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void UART0_SendString(char *)",
-    "location": {
-      "column": "6",
-      "line": "138",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "UART0_SendString",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART0_ReadChar",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "char UART0_ReadChar(void)",
-    "location": {
-      "column": "6",
-      "line": "145",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "UART0_ReadChar",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@processCommand",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void processCommand(char)",
-    "location": {
-      "column": "6",
-      "line": "150",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "processCommand",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int main(void)",
-    "location": {
-      "column": "5",
-      "line": "165",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@4960@F@main@index",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "index",
-    "location": {
-      "column": "13",
-      "line": "169",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "index",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@4984@F@main@c",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "c",
-    "location": {
-      "column": "10",
-      "line": "170",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "c",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_YSIZET_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_YSIZET_H",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@277@macro@_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "16",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STD_USING_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "17",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_STD_USING_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Sizet",
-    "location": {
-      "column": "18",
-      "line": "18",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DATA_PTR_MEM_HELPER1__",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__DATA_PTR_MEM_HELPER1__",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@__data_size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "1",
-      "line": "23",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__data_size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:relay.h@25@macro@RELAY_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -97501,17 +96773,213 @@
     "scope": null
   },
   {
-    "ID": "c:@F@relay_control_lamp",
+    "ID": "c:@F@relay_init",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void relay_control_lamp(char, uint8_t, uint8_t)",
+    "display": "void relay_init(char, uint8_t, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "9",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.h"
+    },
+    "name": "relay_init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@relay_control",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void relay_control(char, uint8_t, uint8_t)",
     "location": {
       "column": "6",
       "line": "10",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.h"
     },
-    "name": "relay_control_lamp",
+    "name": "relay_control",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@relay_control",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void relay_control(char, uint8_t, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "10",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.h"
+    },
+    "name": "relay_control",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Delay(uint32_t)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "Delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@108@F@Delay@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "27",
+      "line": "6",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@getAppButton",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t getAppButton(uint8_t)",
+    "location": {
+      "column": "9",
+      "line": "10",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "getAppButton",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int main(void)",
+    "location": {
+      "column": "5",
+      "line": "23",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@443@F@main@receivedChar",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "receivedChar",
+    "location": {
+      "column": "10",
+      "line": "24",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "receivedChar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@467@F@main@appButtonForLamp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "appButtonForLamp",
+    "location": {
+      "column": "13",
+      "line": "25",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "appButtonForLamp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@502@F@main@physicalButtonForLamp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "physicalButtonForLamp",
+    "location": {
+      "column": "13",
+      "line": "26",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "physicalButtonForLamp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@542@F@main@xor_result_For_Lamp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "xor_result_For_Lamp",
+    "location": {
+      "column": "13",
+      "line": "27",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "xor_result_For_Lamp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@580@F@main@appButtonForPlug",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "appButtonForPlug",
+    "location": {
+      "column": "13",
+      "line": "28",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "appButtonForPlug",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@615@F@main@physicalButtonForPlug",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "physicalButtonForPlug",
+    "location": {
+      "column": "13",
+      "line": "29",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "physicalButtonForPlug",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@655@F@main@xor_result_For_Plug",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "xor_result_For_Plug",
+    "location": {
+      "column": "13",
+      "line": "30",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "xor_result_For_Plug",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@693@F@main@DoorStatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "DoorStatus",
+    "location": {
+      "column": "13",
+      "line": "31",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "DoorStatus",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -97529,17 +96997,115 @@
     "scope": null
   },
   {
-    "ID": "c:@F@relay_control_lamp",
+    "ID": "c:@F@relay_control",
     "What": "Function",
     "defdec": "Def",
-    "display": "void relay_control_lamp(char, uint8_t, uint8_t)",
+    "display": "void relay_control(char, uint8_t, uint8_t)",
     "location": {
       "column": "6",
       "line": "7",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\relay.c"
     },
-    "name": "relay_control_lamp",
+    "name": "relay_control",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UART_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "6",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.c"
+    },
+    "name": "UART_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendChar",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void UART_SendChar(char)",
+    "location": {
+      "column": "6",
+      "line": "25",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.c"
+    },
+    "name": "UART_SendChar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_ReadChar",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "char UART_ReadChar(void)",
+    "location": {
+      "column": "6",
+      "line": "31",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.c"
+    },
+    "name": "UART_ReadChar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:uart.h@24@macro@UART_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART_H",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_ReadChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char UART_ReadChar(void)",
+    "location": {
+      "column": "6",
+      "line": "5",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_ReadChar",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_SendChar(char)",
+    "location": {
+      "column": "6",
+      "line": "6",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_SendChar",
+    "origin": "user_include",
     "scope": null
   }
 ]
