@@ -27,8 +27,17 @@ void UART_SendChar(char c) {
     UART0_DR_R = c;                    // Write character to data register
 }
 
-// UART Read Character
 char UART_ReadChar(void) {
-    while (UART0_FR_R & UART_FR_RXFE); // Wait until RX buffer is not empty
-    return (char)(UART0_DR_R & 0xFF);  // Read received character
+    uint32_t timeout = 100000;
+    
+    while ((UART0_FR_R & UART_FR_RXFE) && timeout > 0) {
+        timeout--;
+    }
+    
+    if (timeout == 0) {
+        return '\0'; 
+    }
+    
+    return (char)(UART0_DR_R & 0xFF);
 }
+

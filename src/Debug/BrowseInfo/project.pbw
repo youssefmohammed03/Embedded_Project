@@ -96821,7 +96821,7 @@
     "display": "void Delay(uint32_t)",
     "location": {
       "column": "6",
-      "line": "4",
+      "line": "5",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "Delay",
@@ -96829,30 +96829,16 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@108@F@Delay@i",
+    "ID": "c:main.c@127@F@Delay@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "27",
-      "line": "6",
+      "line": "7",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@getAppButton",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint8_t getAppButton(uint8_t)",
-    "location": {
-      "column": "9",
-      "line": "10",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "getAppButton",
     "origin": "project_file",
     "scope": null
   },
@@ -96863,7 +96849,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "23",
+      "line": "16",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "main",
@@ -96871,27 +96857,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@443@F@main@receivedChar",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "receivedChar",
-    "location": {
-      "column": "10",
-      "line": "24",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "receivedChar",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@467@F@main@appButtonForLamp",
+    "ID": "c:main.c@351@F@main@appButtonForLamp",
     "What": "Variable",
     "defdec": "Def",
     "display": "appButtonForLamp",
     "location": {
       "column": "13",
-      "line": "25",
+      "line": "17",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "appButtonForLamp",
@@ -96899,13 +96871,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@502@F@main@physicalButtonForLamp",
+    "ID": "c:main.c@386@F@main@physicalButtonForLamp",
     "What": "Variable",
     "defdec": "Def",
     "display": "physicalButtonForLamp",
     "location": {
       "column": "13",
-      "line": "26",
+      "line": "18",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "physicalButtonForLamp",
@@ -96913,13 +96885,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@542@F@main@xor_result_For_Lamp",
+    "ID": "c:main.c@426@F@main@xor_result_For_Lamp",
     "What": "Variable",
     "defdec": "Def",
     "display": "xor_result_For_Lamp",
     "location": {
       "column": "13",
-      "line": "27",
+      "line": "19",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "xor_result_For_Lamp",
@@ -96927,13 +96899,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@580@F@main@appButtonForPlug",
+    "ID": "c:main.c@464@F@main@appButtonForPlug",
     "What": "Variable",
     "defdec": "Def",
     "display": "appButtonForPlug",
     "location": {
       "column": "13",
-      "line": "28",
+      "line": "20",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "appButtonForPlug",
@@ -96941,13 +96913,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@615@F@main@physicalButtonForPlug",
+    "ID": "c:main.c@499@F@main@physicalButtonForPlug",
     "What": "Variable",
     "defdec": "Def",
     "display": "physicalButtonForPlug",
     "location": {
       "column": "13",
-      "line": "29",
+      "line": "21",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "physicalButtonForPlug",
@@ -96955,31 +96927,129 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@655@F@main@xor_result_For_Plug",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "xor_result_For_Plug",
-    "location": {
-      "column": "13",
-      "line": "30",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
-    },
-    "name": "xor_result_For_Plug",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@693@F@main@DoorStatus",
+    "ID": "c:main.c@539@F@main@DoorStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "DoorStatus",
     "location": {
       "column": "13",
-      "line": "31",
+      "line": "22",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "DoorStatus",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@568@F@main@receivedChar",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "receivedChar",
+    "location": {
+      "column": "10",
+      "line": "23",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
+    },
+    "name": "receivedChar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:uart.h@24@macro@UART_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART_H",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_Init(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_ReadChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char UART_ReadChar(void)",
+    "location": {
+      "column": "6",
+      "line": "5",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_ReadChar",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_ReadChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "char UART_ReadChar(void)",
+    "location": {
+      "column": "6",
+      "line": "5",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_ReadChar",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_SendChar(char)",
+    "location": {
+      "column": "6",
+      "line": "6",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_SendChar",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_SendChar(char)",
+    "location": {
+      "column": "6",
+      "line": "6",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+    },
+    "name": "UART_SendChar",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -97045,7 +97115,7 @@
     "display": "char UART_ReadChar(void)",
     "location": {
       "column": "6",
-      "line": "31",
+      "line": "30",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.c"
     },
     "name": "UART_ReadChar",
@@ -97053,59 +97123,17 @@
     "scope": null
   },
   {
-    "ID": "c:uart.h@24@macro@UART_H",
-    "What": "MacroDef",
+    "ID": "c:uart.c@1269@F@UART_ReadChar@timeout",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "UART_H",
+    "display": "timeout",
     "location": {
-      "column": "9",
-      "line": "2",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
+      "column": "14",
+      "line": "31",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.c"
     },
-    "name": "UART_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "4",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
-    },
-    "name": "UART_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_ReadChar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "char UART_ReadChar(void)",
-    "location": {
-      "column": "6",
-      "line": "5",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
-    },
-    "name": "UART_ReadChar",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_SendChar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_SendChar(char)",
-    "location": {
-      "column": "6",
-      "line": "6",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\uart.h"
-    },
-    "name": "UART_SendChar",
-    "origin": "user_include",
+    "name": "timeout",
+    "origin": "project_file",
     "scope": null
   }
 ]

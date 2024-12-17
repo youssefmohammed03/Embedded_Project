@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  16/Dec/2024  23:57:59
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  17/Dec/2024  17:06:24
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -72,20 +72,20 @@ No sections matched the following patterns:
   .intvec   ro code          0x0    0x40  vector_table_M.o [4]
                           - 0x40    0x40
 
-"P1":                              0x46c
+"P1":                              0x4f8
   .text     ro code         0x40   0x214  DIO.o [1]
-  .text     ro code        0x254   0x114  main.o [1]
-  .text     ro code        0x368    0x88  uart.o [1]
-  .text     ro code        0x3f0    0x34  relay.o [1]
-  .text     ro code        0x424    0x22  fpinit_M.o [3]
-  .text     ro code        0x446     0x2  vectortrap_M.o [4]
-  .text     ro code        0x448    0x1e  cmain.o [4]
-  .text     ro code        0x466     0x4  low_level_init.o [2]
-  .text     ro code        0x46a     0x4  exit.o [2]
-  .text     ro code        0x470     0xa  cexit.o [4]
-  .text     ro code        0x47c    0x14  exit.o [5]
-  .text     ro code        0x490    0x1c  cstartup_M.o [4]
-                         - 0x4ac   0x46c
+  .text     ro code        0x254   0x160  main.o [1]
+  .text     ro code        0x3b4    0xc8  uart.o [1]
+  .text     ro code        0x47c    0x34  relay.o [1]
+  .text     ro code        0x4b0    0x22  fpinit_M.o [3]
+  .text     ro code        0x4d2     0x2  vectortrap_M.o [4]
+  .text     ro code        0x4d4    0x1e  cmain.o [4]
+  .text     ro code        0x4f2     0x4  low_level_init.o [2]
+  .text     ro code        0x4f6     0x4  exit.o [2]
+  .text     ro code        0x4fc     0xa  cexit.o [4]
+  .text     ro code        0x508    0x14  exit.o [5]
+  .text     ro code        0x51c    0x1c  cstartup_M.o [4]
+                         - 0x538   0x4f8
 
 "P2":                             0x1000
   CSTACK             0x2000'0000  0x1000  <Block>
@@ -96,7 +96,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-        0x4ac     0x3'ffff  0x3'fb54
+        0x538     0x3'ffff  0x3'fac8
   0x2000'1000  0x2000'7fff    0x7000
 
 
@@ -113,11 +113,11 @@ command line/config:
 
 D:\Yusuf\subjects\Semester 7\Introduction to Embedded Systems\Project\Embedded_Project\src\Debug\Obj: [1]
     DIO.o                 532
-    main.o                276
+    main.o                352
     relay.o                52
-    uart.o                136
+    uart.o                200
     ----------------------------------
-    Total:                996
+    Total:              1'136
 
 dl7M_tln.a: [2]
     exit.o                  4
@@ -147,48 +147,49 @@ shb_l.a: [5]
     Gaps                    4
     Linker created               4'096
 --------------------------------------
-    Grand Total:        1'196    4'096
+    Grand Total:        1'336    4'096
 
 
 *******************************************************************************
 *** ENTRY LIST
 ***
 
-Entry                     Address  Size  Type      Object
------                     -------  ----  ----      ------
-?main                       0x449        Code  Gb  cmain.o [4]
-BusFault_Handler            0x447        Code  Wk  vectortrap_M.o [4]
-CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
-CSTACK$$Limit         0x2000'1000         --   Gb  - Linker created -
-DebugMon_Handler            0x447        Code  Wk  vectortrap_M.o [4]
-Delay                       0x255  0x22  Code  Gb  main.o [1]
-HardFault_Handler           0x447        Code  Wk  vectortrap_M.o [4]
-MemManage_Handler           0x447        Code  Wk  vectortrap_M.o [4]
-NMI_Handler                 0x447        Code  Wk  vectortrap_M.o [4]
-PendSV_Handler              0x447        Code  Wk  vectortrap_M.o [4]
-Region$$Table$$Base           0x0         --   Gb  - Linker created -
-Region$$Table$$Limit          0x0         --   Gb  - Linker created -
-SVC_Handler                 0x447        Code  Wk  vectortrap_M.o [4]
-SysTick_Handler             0x447        Code  Wk  vectortrap_M.o [4]
-UART_Init                   0x369  0x64  Code  Gb  uart.o [1]
-UsageFault_Handler          0x447        Code  Wk  vectortrap_M.o [4]
-__cmain                     0x449        Code  Gb  cmain.o [4]
-__exit                      0x47d  0x14  Code  Gb  exit.o [5]
-__iar_init_vfp              0x425        Code  Gb  fpinit_M.o [3]
-__iar_program_start         0x491        Code  Gb  cstartup_M.o [4]
-__low_level_init            0x467   0x4  Code  Gb  low_level_init.o [2]
-__vector_table                0x0        Data  Gb  vector_table_M.o [4]
-_call_main                  0x455        Code  Gb  cmain.o [4]
-_exit                       0x471        Code  Gb  cexit.o [4]
-ctz                          0x41  0x1c  Code  Gb  DIO.o [1]
-dio_init                     0x5d  0xc0  Code  Gb  DIO.o [1]
-dio_readpin                 0x11d  0x5a  Code  Gb  DIO.o [1]
-dio_writepin                0x177  0xc4  Code  Gb  DIO.o [1]
-exit                        0x46b   0x4  Code  Gb  exit.o [2]
-getAppButton                0x277  0x12  Code  Gb  main.o [1]
-main                        0x289  0xd6  Code  Gb  main.o [1]
-relay_control               0x40b  0x1a  Code  Gb  relay.o [1]
-relay_init                  0x3f1  0x1a  Code  Gb  relay.o [1]
+Entry                     Address   Size  Type      Object
+-----                     -------   ----  ----      ------
+?main                       0x4d5         Code  Gb  cmain.o [4]
+BusFault_Handler            0x4d3         Code  Wk  vectortrap_M.o [4]
+CSTACK$$Base          0x2000'0000          --   Gb  - Linker created -
+CSTACK$$Limit         0x2000'1000          --   Gb  - Linker created -
+DebugMon_Handler            0x4d3         Code  Wk  vectortrap_M.o [4]
+Delay                       0x255   0x22  Code  Gb  main.o [1]
+HardFault_Handler           0x4d3         Code  Wk  vectortrap_M.o [4]
+MemManage_Handler           0x4d3         Code  Wk  vectortrap_M.o [4]
+NMI_Handler                 0x4d3         Code  Wk  vectortrap_M.o [4]
+PendSV_Handler              0x4d3         Code  Wk  vectortrap_M.o [4]
+Region$$Table$$Base           0x0          --   Gb  - Linker created -
+Region$$Table$$Limit          0x0          --   Gb  - Linker created -
+SVC_Handler                 0x4d3         Code  Wk  vectortrap_M.o [4]
+SysTick_Handler             0x4d3         Code  Wk  vectortrap_M.o [4]
+UART_Init                   0x3b5   0x64  Code  Gb  uart.o [1]
+UART_ReadChar               0x42b   0x22  Code  Gb  uart.o [1]
+UART_SendChar               0x419   0x12  Code  Gb  uart.o [1]
+UsageFault_Handler          0x4d3         Code  Wk  vectortrap_M.o [4]
+__cmain                     0x4d5         Code  Gb  cmain.o [4]
+__exit                      0x509   0x14  Code  Gb  exit.o [5]
+__iar_init_vfp              0x4b1         Code  Gb  fpinit_M.o [3]
+__iar_program_start         0x51d         Code  Gb  cstartup_M.o [4]
+__low_level_init            0x4f3    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                0x0         Data  Gb  vector_table_M.o [4]
+_call_main                  0x4e1         Code  Gb  cmain.o [4]
+_exit                       0x4fd         Code  Gb  cexit.o [4]
+ctz                          0x41   0x1c  Code  Gb  DIO.o [1]
+dio_init                     0x5d   0xc0  Code  Gb  DIO.o [1]
+dio_readpin                 0x11d   0x5a  Code  Gb  DIO.o [1]
+dio_writepin                0x177   0xc4  Code  Gb  DIO.o [1]
+exit                        0x4f7    0x4  Code  Gb  exit.o [2]
+main                        0x277  0x134  Code  Gb  main.o [1]
+relay_control               0x497   0x1a  Code  Gb  relay.o [1]
+relay_init                  0x47d   0x1a  Code  Gb  relay.o [1]
 
 
 [1] = D:\Yusuf\subjects\Semester 7\Introduction to Embedded Systems\Project\Embedded_Project\src\Debug\Obj
@@ -197,7 +198,7 @@ relay_init                  0x3f1  0x1a  Code  Gb  relay.o [1]
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-  1'196 bytes of readonly  code memory
+  1'336 bytes of readonly  code memory
   4'096 bytes of readwrite data memory
 
 Errors: none

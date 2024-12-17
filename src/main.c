@@ -1,18 +1,11 @@
 #include "relay.h"
 #include "DIO.h"
+#include "uart.h"
 
 void Delay(uint32_t time) {  
     while (time--) {  
         for (volatile int i = 0; i < 1000; i++) { }  
     }  
-}
-
-uint8_t getAppButton(uint8_t appButton){
-  if(appButton){
-    return 1;
-  } else{
-    return 0;
-  }
 }
 
 // A2 physical button lamp
@@ -26,8 +19,8 @@ int main(void) {
     uint8_t xor_result_For_Lamp = 0;
     uint8_t appButtonForPlug = 0;
     uint8_t physicalButtonForPlug = 0;
-    uint8_t xor_result_For_Plug = 0;
     uint8_t DoorStatus = 0;
+    char receivedChar;
     
     UART_Init(); 
     
@@ -46,18 +39,37 @@ int main(void) {
     while (1) {
         physicalButtonForLamp = dio_readpin('A', Pin2);
         physicalButtonForPlug = dio_readpin('B', Pin0);
+
         
-        appButtonForLamp = getAppButton(appButtonForLamp);
-        appButtonForPlug = getAppButton(appButtonForPlug);
+        receivedChar = UART_ReadChar();
+        if(receivedChar == 'P'){appButtonForPlug = 1;}
+        else if(receivedChar == 'p'){appButtonForPlug = 0;}
+        else if(receivedChar == 'L'){
+          if(appButtonForLamp){appButtonForLamp = 0;}
+          else{appButtonForLamp = 1;}
+        }
+        else{}
+        receivedChar = 0;
   
         xor_result_For_Lamp = physicalButtonForLamp ^ appButtonForLamp;
-        xor_result_For_Plug = physicalButtonForPlug ^ appButtonForPlug;
         
         relay_control('A',Pin3, xor_result_For_Lamp);
-        relay_control('B',Pin1, xor_result_For_Plug);
+        if(physicalButtonForPlug){
+          if(appButtonForPlug){
+            relay_control('B',Pin1, 1);
+          } else{
+            relay_control('B',Pin1, 0);
+          }
+        } else{
+          relay_control('B',Pin1, 0);
+        }
         DoorStatus = dio_readpin('B', Pin2);
+        
+        if(DoorStatus){
+          UART_SendChar('D');
+        } else{
+          UART_SendChar('d');
+        }
         Delay(500);
     }
-
-    return 0;
 }
