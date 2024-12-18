@@ -41,3 +41,7 @@ char UART_ReadChar(void) {
     return (char)(UART0_DR_R & 0xFF);
 }
 
+
+
+
+

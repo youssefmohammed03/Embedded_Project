@@ -8,10 +8,7 @@ class HomeApp:
         master.title("Home")
         
         # Set the window size to 300x150 pixels
-        master.geometry("300x150")
-        
-        # Disable resizing the window
-        master.resizable(False, False)
+        master.geometry("300x300")
 
         # Set up the serial connection
         self.ser = serial.Serial('COM4', 9600, timeout=1)
@@ -32,6 +29,12 @@ class HomeApp:
         # Label to show Door status
         self.door_status_label = tk.Label(master, text="Door status unknown")
         self.door_status_label.pack(pady=5)  # Add some vertical padding
+
+
+
+        # Label to show Temperature
+        self.temperature_label = tk.Label(master, text="Temperature: --")
+        self.temperature_label.pack(pady=5)
 
         # Start a thread to read from the serial port
         self.read_thread = threading.Thread(target=self.read_serial)
@@ -55,16 +58,40 @@ class HomeApp:
         self.ser.write(b'L')
 
     def read_serial(self):
+        buffer = ""  # Temporary buffer to store characters
         while True:
-            data = self.ser.read()
+            data = self.ser.read().decode('utf-8')  # Read one byte, decode as UTF-8
             if data:
-                self.handle_serial_data(data)
+                if data == 'T':  # Start of ADC data
+                    buffer = ""  # Clear the buffer
+                elif data == '\n':  # End of ADC data (assuming newline termination)
+                    self.handle_adc_data(buffer)  # Process the complete ADC value
+                elif data == 'D' or data == 'd':  # Door status
+                    self.handle_serial_data(data.encode('utf-8'))
+                else:
+                    buffer += data  # Append to the buffer
+
+    def handle_adc_data(self, adc_value_str):
+        try:
+            # Convert ADC value from string to integer
+            adc_value = int(adc_value_str)
+
+            # Calculate the temperature using the formula (adcValue * 330) / 4096
+            temperature = (adc_value * 330) / 4096
+
+            # Update the ADC value and temperature in the GUI
+            #self.adc_value_label.config(text=f"ADC Value: {adc_value_str}")
+            self.temperature_label.config(text=f"Temperature: {temperature:.2f}°C")
+        except ValueError:
+            # Handle invalid ADC data (if any)
+            print("Invalid ADC value received:", adc_value_str)
 
     def handle_serial_data(self, data):
         if data == b'D':
             self.door_status_label.config(text="Door is Open")
         elif data == b'd':
             self.door_status_label.config(text="Door is Closed")
+
 
     def close_connection(self):
         self.ser.close()

@@ -8,6 +8,11 @@ void Delay(uint32_t time) {
     }  
 }
 
+void distribute_uint16_to_chars(uint16_t value, char *result) {
+    // Use sprintf to convert the integer into a string
+    sprintf(result, "%u", value);
+}
+
 // A2 physical button lamp
 // A3 input to relay for the lamp
 // B0 for physical button plug
@@ -21,9 +26,12 @@ int main(void) {
     uint8_t physicalButtonForPlug = 0;
     uint8_t DoorStatus = 0;
     char receivedChar;
+    uint16_t adcValue;
+    float temperature;
     
     UART_Init(); 
-    
+    ADC_Init_PE2();
+     
     SYSCTL_RCGCGPIO_R |= (1U << ('A' - 'A'));
     while ((SYSCTL_PRGPIO_R & (1U << ('A' - 'A'))) == 0);
     
@@ -70,6 +78,21 @@ int main(void) {
         } else{
           UART_SendChar('d');
         }
+        
+        adcValue = ADC_Read_PE2(); // Read ADC value
+        temperature = (adcValue * 3.3) / 4096.0; // Convert ADC value to voltage
+        temperature = temperature / 0.01; 
+        char digits[6]; // Enough to store up to 5 digits + null terminator for uint16_t
+
+        distribute_uint16_to_chars(adcValue, digits);
+        
+        UART_SendChar('T');
+        
+        for (int i = 0; digits[i] != '\0'; i++) {
+          UART_SendChar(digits[i]); // Send one character at a time
+        }
+        
+        UART_SendChar('\n');
         Delay(500);
     }
 }
