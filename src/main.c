@@ -1,6 +1,7 @@
 #include "relay.h"
 #include "DIO.h"
 #include "uart.h"
+#include "Buzzer.h"
 
 void Delay(uint32_t time) {  
     while (time--) {  
@@ -30,6 +31,7 @@ int main(void) {
     float temperature;
     
     UART_Init(); 
+    Buzzer_Init();
     ADC_Init_PE2();
      
     SYSCTL_RCGCGPIO_R |= (1U << ('A' - 'A'));
@@ -55,10 +57,15 @@ int main(void) {
         else if(receivedChar == 'L'){
           if(appButtonForLamp){appButtonForLamp = 0;}
           else{appButtonForLamp = 1;}
+        } else if(receivedChar == 'F'){
+          Buzzer_On();
+        } else if(receivedChar == 'f'){
+          Buzzer_Off();
         }
         else{}
         receivedChar = 0;
-  
+        Buzzer_On();
+        Buzzer_Off();
         xor_result_For_Lamp = physicalButtonForLamp ^ appButtonForLamp;
         
         relay_control('A',Pin3, xor_result_For_Lamp);
@@ -93,6 +100,8 @@ int main(void) {
         }
         
         UART_SendChar('\n');
+        
+        
         Delay(500);
     }
 }

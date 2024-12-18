@@ -2095,6 +2095,12 @@
         <name>$PROJ_DIR$\bitwise_operations.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\Buzzer.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Buzzer.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\DIO.c</name>
     </file>
     <file>

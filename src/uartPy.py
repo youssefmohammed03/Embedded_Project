@@ -79,6 +79,13 @@ class HomeApp:
             # Calculate the temperature using the formula (adcValue * 330) / 4096
             temperature = (adc_value * 330) / 4096
 
+            if temperature > 35:
+                #self.ser.write(b'F')
+                pass
+            else:
+                #self.ser.write(b'f')
+                pass
+
             # Update the ADC value and temperature in the GUI
             #self.adc_value_label.config(text=f"ADC Value: {adc_value_str}")
             self.temperature_label.config(text=f"Temperature: {temperature:.2f}°C")
