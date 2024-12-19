@@ -7,10 +7,12 @@
 
 #define BUZZER_PORT 'B'    
 #define BUZZER_PIN (1U << 7) // PB7 is used for the buzzer
-#define ALARM_TEMP_THRESHOLD 35.0f 
+#define ALARM_adcValue_THRESHOLD 435 
 
 void Buzzer_Init(void) {
     // Initialize PB7 as an output for the buzzer
+    SYSCTL_RCGCGPIO_R |= (1U << ('B' - 'A'));
+    while ((SYSCTL_PRGPIO_R & (1U << ('B' - 'A'))) == 0);
     dio_init(BUZZER_PORT, BUZZER_PIN, Output);
 
     // Ensure the buzzer is initially off
@@ -27,13 +29,12 @@ void Buzzer_Off(void) {
     dio_writepin(BUZZER_PORT, BUZZER_PIN, 0);
 }
 
-void CheckTemperatureAndTriggerAlarm(float temperature) {
-    // Check if the temperature exceeds the threshold
-    if (temperature > ALARM_TEMP_THRESHOLD) {
+void CheckAdcValueAndTriggerAlarm(uint16_t adcValue) {
+    // Check if the adcValue exceeds the threshold
+  
+    if (adcValue > ALARM_adcValue_THRESHOLD) {
         Buzzer_On();
-        ActivateAlarm(); 
     } else {
         Buzzer_Off();
-        DeactivateAlarm(); 
     }
 }

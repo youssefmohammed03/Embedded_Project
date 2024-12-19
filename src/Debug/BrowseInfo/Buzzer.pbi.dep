@@ -9,4 +9,7 @@ D:\Yusuf\subjects\Semester\ 7\Introduction\ to\ Embedded\ Systems\Project\Embedd
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
   D:\Yusuf\subjects\Semester\ 7\Introduction\ to\ Embedded\ Systems\Project\Embedded_Project\src/dio.h \
   D:\Yusuf\subjects\Semester\ 7\Introduction\ to\ Embedded\ Systems\Project\Embedded_Project\src/tm4c123gh6pm.h \
-  D:\Yusuf\subjects\Semester\ 7\Introduction\ to\ Embedded\ Systems\Project\Embedded_Project\src/bitwise_operations.h
+  D:\Yusuf\subjects\Semester\ 7\Introduction\ to\ Embedded\ Systems\Project\Embedded_Project\src/bitwise_operations.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdio.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ysizet.h \
+  D:\Yusuf\subjects\Semester\ 7\Introduction\ to\ Embedded\ Systems\Project\Embedded_Project\src/Buzzer.h

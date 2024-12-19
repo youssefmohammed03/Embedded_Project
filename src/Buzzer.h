@@ -9,6 +9,6 @@
 void Buzzer_Init(void);
 void Buzzer_On(void);
 void Buzzer_Off(void);
-void CheckTemperatureAndTriggerAlarm(float temperature);
+void CheckAdcValueAndTriggerAlarm(uint16_t adcValue);
 
 #endif

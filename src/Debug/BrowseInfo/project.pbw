@@ -97249,16 +97249,16 @@
     "scope": null
   },
   {
-    "ID": "c:Buzzer.c@234@macro@ALARM_TEMP_THRESHOLD",
+    "ID": "c:Buzzer.c@234@macro@ALARM_adcValue_THRESHOLD",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "ALARM_TEMP_THRESHOLD",
+    "display": "ALARM_adcValue_THRESHOLD",
     "location": {
       "column": "9",
       "line": "10",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\Buzzer.c"
     },
-    "name": "ALARM_TEMP_THRESHOLD",
+    "name": "ALARM_adcValue_THRESHOLD",
     "origin": "project_file",
     "scope": null
   },
@@ -97283,7 +97283,7 @@
     "display": "void Buzzer_On(void)",
     "location": {
       "column": "6",
-      "line": "20",
+      "line": "22",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\Buzzer.c"
     },
     "name": "Buzzer_On",
@@ -97297,7 +97297,7 @@
     "display": "void Buzzer_Off(void)",
     "location": {
       "column": "6",
-      "line": "25",
+      "line": "27",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\Buzzer.c"
     },
     "name": "Buzzer_Off",
@@ -97305,16 +97305,16 @@
     "scope": null
   },
   {
-    "ID": "c:@F@CheckTemperatureAndTriggerAlarm",
+    "ID": "c:@F@CheckAdcValueAndTriggerAlarm",
     "What": "Function",
     "defdec": "Def",
-    "display": "void CheckTemperatureAndTriggerAlarm(float)",
+    "display": "void CheckAdcValueAndTriggerAlarm(uint16_t)",
     "location": {
       "column": "6",
-      "line": "30",
+      "line": "32",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\Buzzer.c"
     },
-    "name": "CheckTemperatureAndTriggerAlarm",
+    "name": "CheckAdcValueAndTriggerAlarm",
     "origin": "project_file",
     "scope": null
   },
@@ -97501,6 +97501,76 @@
     "scope": null
   },
   {
+    "ID": "c:bitwise_operations.h@38@macro@BITWISE_OPERATIONS_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BITWISE_OPERATIONS_H",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
+    },
+    "name": "BITWISE_OPERATIONS_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:bitwise_operations.h@70@macro@SET_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SET_BIT",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
+    },
+    "name": "SET_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:bitwise_operations.h@128@macro@CLEAR_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CLEAR_BIT",
+    "location": {
+      "column": "9",
+      "line": "6",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
+    },
+    "name": "CLEAR_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:bitwise_operations.h@187@macro@TOGGLE_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TOGGLE_BIT",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
+    },
+    "name": "TOGGLE_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:bitwise_operations.h@245@macro@GET_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GET_BIT",
+    "location": {
+      "column": "9",
+      "line": "10",
+      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
+    },
+    "name": "GET_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:Buzzer.h@24@macro@BUZZER",
     "What": "MacroDef",
     "defdec": "Def",
@@ -97627,30 +97697,30 @@
     "scope": null
   },
   {
-    "ID": "c:@F@CheckTemperatureAndTriggerAlarm",
+    "ID": "c:@F@CheckAdcValueAndTriggerAlarm",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void CheckTemperatureAndTriggerAlarm(float)",
+    "display": "void CheckAdcValueAndTriggerAlarm(uint16_t)",
     "location": {
       "column": "6",
       "line": "12",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\Buzzer.h"
     },
-    "name": "CheckTemperatureAndTriggerAlarm",
+    "name": "CheckAdcValueAndTriggerAlarm",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@CheckTemperatureAndTriggerAlarm",
+    "ID": "c:@F@CheckAdcValueAndTriggerAlarm",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void CheckTemperatureAndTriggerAlarm(float)",
+    "display": "void CheckAdcValueAndTriggerAlarm(uint16_t)",
     "location": {
       "column": "6",
       "line": "12",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\Buzzer.h"
     },
-    "name": "CheckTemperatureAndTriggerAlarm",
+    "name": "CheckAdcValueAndTriggerAlarm",
     "origin": "user_include",
     "scope": null
   },
@@ -97722,76 +97792,6 @@
     },
     "name": "__bool_true_false_are_defined",
     "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bitwise_operations.h@38@macro@BITWISE_OPERATIONS_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BITWISE_OPERATIONS_H",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
-    },
-    "name": "BITWISE_OPERATIONS_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bitwise_operations.h@70@macro@SET_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SET_BIT",
-    "location": {
-      "column": "9",
-      "line": "4",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
-    },
-    "name": "SET_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bitwise_operations.h@128@macro@CLEAR_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CLEAR_BIT",
-    "location": {
-      "column": "9",
-      "line": "6",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
-    },
-    "name": "CLEAR_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bitwise_operations.h@187@macro@TOGGLE_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TOGGLE_BIT",
-    "location": {
-      "column": "9",
-      "line": "8",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
-    },
-    "name": "TOGGLE_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bitwise_operations.h@245@macro@GET_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GET_BIT",
-    "location": {
-      "column": "9",
-      "line": "10",
-      "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\bitwise_operations.h"
-    },
-    "name": "GET_BIT",
-    "origin": "user_include",
     "scope": null
   },
   {
@@ -98257,13 +98257,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2822@F@main@digits",
+    "ID": "c:main.c@2596@F@main@digits",
     "What": "Variable",
     "defdec": "Def",
     "display": "digits",
     "location": {
       "column": "14",
-      "line": "92",
+      "line": "86",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "digits",
@@ -98271,13 +98271,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3023@F@main@i",
+    "ID": "c:main.c@2733@F@main@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "98",
+      "line": "92",
       "path": "D:\\Yusuf\\subjects\\Semester 7\\Introduction to Embedded Systems\\Project\\Embedded_Project\\src\\main.c"
     },
     "name": "i",

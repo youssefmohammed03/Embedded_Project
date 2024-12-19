@@ -57,15 +57,9 @@ int main(void) {
         else if(receivedChar == 'L'){
           if(appButtonForLamp){appButtonForLamp = 0;}
           else{appButtonForLamp = 1;}
-        } else if(receivedChar == 'F'){
-          Buzzer_On();
-        } else if(receivedChar == 'f'){
-          Buzzer_Off();
-        }
-        else{}
+        }else{}
         receivedChar = 0;
-        Buzzer_On();
-        Buzzer_Off();
+        
         xor_result_For_Lamp = physicalButtonForLamp ^ appButtonForLamp;
         
         relay_control('A',Pin3, xor_result_For_Lamp);
@@ -86,20 +80,22 @@ int main(void) {
           UART_SendChar('d');
         }
         
-        adcValue = ADC_Read_PE2(); // Read ADC value
-        temperature = (adcValue * 3.3) / 4096.0; // Convert ADC value to voltage
+        adcValue = ADC_Read_PE2();
+        temperature = (adcValue * 3.3) / 4096.0;
         temperature = temperature / 0.01; 
-        char digits[6]; // Enough to store up to 5 digits + null terminator for uint16_t
+        char digits[6]; 
 
         distribute_uint16_to_chars(adcValue, digits);
         
         UART_SendChar('T');
         
         for (int i = 0; digits[i] != '\0'; i++) {
-          UART_SendChar(digits[i]); // Send one character at a time
+          UART_SendChar(digits[i]);
         }
         
         UART_SendChar('\n');
+        
+        CheckAdcValueAndTriggerAlarm(adcValue);
         
         
         Delay(500);
