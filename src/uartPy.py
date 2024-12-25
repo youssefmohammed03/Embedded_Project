@@ -104,7 +104,7 @@ class HomeApp:
             self.temperature_label.config(text=f"Temperature: {temperature:.2f}°C")
 
             # Handle the alarm logic
-            if temperature > 35:
+            if temperature > 27:
                 if not self.alarm_active:  # Start the alarm if it's not already active
                     self.alarm_active = True
                     threading.Thread(target=self.start_beeping, daemon=True).start()

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  19/Dec/2024  11:17:51
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  24/Dec/2024  19:26:00
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -99,7 +99,7 @@ define block HEAP with size = 8K, alignment = 8 { };
   .text            ro code       0x1e18   0x214  main.o [1]
   .text            ro code       0x202c    0x40  sprintf.o [2]
   .text            ro code       0x206c    0xc8  uart.o [1]
-  .text            ro code       0x2134    0x6a  Buzzer.o [1]
+  .text            ro code       0x2134    0x6c  Buzzer.o [1]
   .text            ro code       0x21a0    0xd0  ADC.o [1]
   .text            ro code       0x2270    0x34  relay.o [1]
   .text            ro code       0x22a4    0x68  DblToFlt.o [3]
@@ -158,13 +158,13 @@ command line/config:
 
 D:\Yusuf\subjects\Semester 7\Introduction to Embedded Systems\Project\Embedded_Project\src\Debug\Obj: [1]
     ADC.o                      208
-    Buzzer.o                   106
+    Buzzer.o                   108
     DIO.o                      532
     main.o                     532
     relay.o                     52
     uart.o                     200
     ------------------------------------------------
-    Total:                   1'630
+    Total:                   1'632
 
 dl7M_tln.a: [2]
     abort.o                      6
@@ -217,7 +217,7 @@ shb_l.a: [5]
     ------------------------------------------------
     Total:                      20
 
-    Gaps                        28        2
+    Gaps                        26        2
     Linker created                       16    4'096
 ----------------------------------------------------
     Grand Total:             9'254       18    4'100
@@ -241,7 +241,7 @@ Buzzer_On                    0x2169    0xe  Code  Gb  Buzzer.o [1]
 CSTACK$$Base            0x2000'0008          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'1008          --   Gb  - Linker created -
 CheckAdcValueAndTriggerAlarm
-                             0x2185   0x1a  Code  Gb  Buzzer.o [1]
+                             0x2185   0x1c  Code  Gb  Buzzer.o [1]
 DebugMon_Handler              0xf77         Code  Wk  vectortrap_M.o [4]
 Delay                        0x1e19   0x22  Code  Gb  main.o [1]
 HardFault_Handler             0xf77         Code  Wk  vectortrap_M.o [4]

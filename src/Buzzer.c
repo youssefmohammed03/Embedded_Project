@@ -7,7 +7,7 @@
 
 #define BUZZER_PORT 'B'    
 #define BUZZER_PIN (1U << 7) // PB7 is used for the buzzer
-#define ALARM_adcValue_THRESHOLD 435 
+#define ALARM_adcValue_THRESHOLD 336
 
 void Buzzer_Init(void) {
     // Initialize PB7 as an output for the buzzer
@@ -31,7 +31,6 @@ void Buzzer_Off(void) {
 
 void CheckAdcValueAndTriggerAlarm(uint16_t adcValue) {
     // Check if the adcValue exceeds the threshold
-  
     if (adcValue > ALARM_adcValue_THRESHOLD) {
         Buzzer_On();
     } else {
